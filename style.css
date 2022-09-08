@@ -47,6 +47,10 @@ p.text {
     body.active {
         background-color: rgba(51,51,51, 0.09);
     }
+    p.text.active {
+        filter: blur(1.5px);
+        z-index: -1;
+    }
     .container {
         position: relative;
     }
@@ -55,6 +59,7 @@ p.text {
     }
     .navbar.active {
         display: flex;
+        z-index: 1;
         flex-direction: column;
         position: absolute;
         top: 40vh;
